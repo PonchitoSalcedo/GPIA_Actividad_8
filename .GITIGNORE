@@ -1,0 +1,63 @@
+# ============================================
+# IGNORAR ARCHIVOS PARA GIT
+# ============================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# MLflow
+mlruns/
+mlflow.db
+*.mlflow
+
+# Modelos y datos
+*.joblib
+*.pkl
+*.h5
+*.pb
+*.onnx
+
+# Archivos de evidencia locales (opcional)
+evidence/logs/*.json
+evidence/logs/*.csv
+evidence/logs/*.html
+!evidence/logs/.gitkeep
+
+# Capturas de pantalla (opcional)
+evidence/screenshots/*.png
+!evidence/screenshots/.gitkeep
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Archivos de entorno
+.env
+.env.local
+.env.*.local
+
+# Cobertura de código
+.coverage
+htmlcov/
+.tox/
