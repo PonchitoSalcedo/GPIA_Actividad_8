@@ -117,5 +117,5 @@ resultado tras la intervención se documentan en
 ## Autor
 Luis Alfonso Salcedo Peña
 
-Repositorio desarrollado para la Actividad 8 del curso de Producción y
-Observabilidad de Modelos de IA.
+Repositorio desarrollado para la Actividad 8 del curso de Gestión de Proyectos 
+de Inteligencia Artificial
