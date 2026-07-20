@@ -1,0 +1,58 @@
+# ============================================
+# .gitignore - PonchitoSalcedo GPIA Actividad 8
+# ============================================
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Entornos virtuales
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# MLflow
+mlruns/
+mlflow.db
+
+# Modelos (NO SUBIR)
+*.joblib
+*.pkl
+*.h5
+*.pb
+*.onnx
+
+# Datos (NO SUBIR)
+*.csv
+*.xlsx
+*.parquet
+
+# Registrar - NO SUBIR logs locales
+Registro/*.csv
+Registro/*.json
+!Registro/.gitkeep
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Configuración local
+.env
+*.local.yaml
+
+# Cobertura
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
