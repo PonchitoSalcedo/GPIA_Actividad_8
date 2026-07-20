@@ -1,0 +1,1200 @@
+[
+  {
+    "timestamp": "2026-07-20T00:51:12.831066+00:00",
+    "nivel": "info",
+    "mensaje": "Sistema de observabilidad inicializado",
+    "contexto": {
+      "experimento": "monitoreo-produccion-california-housing",
+      "features": [
+        "MedInc",
+        "HouseAge",
+        "AveRooms",
+        "AveBedrms",
+        "Population",
+        "AveOccup",
+        "Latitude",
+        "Longitude"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:50.183583+00:00",
+    "nivel": "critical",
+    "mensaje": "ALERTA[critical] Error budget agotado en el paso 2",
+    "contexto": {
+      "id": "d79759c6",
+      "name": "error_budget_exhausted",
+      "severity": "critical",
+      "message": "Error budget agotado en el paso 2",
+      "timestamp": "2026-07-20T00:53:50.183550+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:50.183702+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: rollback_modelo",
+    "contexto": {
+      "runbook": "rollback_modelo",
+      "detalle": "Revirtiendo despliegue de v3 a v2",
+      "resultado": "ejecutado",
+      "timestamp": "2026-07-20T00:53:50.183692+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:50.183727+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: Error budget agotado en el paso 2",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:50.183719+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:50.317576+00:00",
+    "nivel": "critical",
+    "mensaje": "ALERTA[critical] Error budget agotado en el paso 3",
+    "contexto": {
+      "id": "ad4bedcc",
+      "name": "error_budget_exhausted",
+      "severity": "critical",
+      "message": "Error budget agotado en el paso 3",
+      "timestamp": "2026-07-20T00:53:50.317541+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:50.317630+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: rollback_modelo",
+    "contexto": {
+      "runbook": "rollback_modelo",
+      "detalle": "Revirtiendo despliegue de v3 a v2",
+      "resultado": "ejecutado",
+      "timestamp": "2026-07-20T00:53:50.317621+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:50.317652+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: Error budget agotado en el paso 3",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:50.317645+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:50.585822+00:00",
+    "nivel": "warning",
+    "mensaje": "ALERTA[warning] Latencia 235ms supera el umbral operativo en el paso 5",
+    "contexto": {
+      "id": "726dd524",
+      "name": "latency_spike",
+      "severity": "warning",
+      "message": "Latencia 235ms supera el umbral operativo en el paso 5",
+      "timestamp": "2026-07-20T00:53:50.585772+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:50.740362+00:00",
+    "nivel": "warning",
+    "mensaje": "ALERTA[warning] Latencia 249ms supera el umbral operativo en el paso 6",
+    "contexto": {
+      "id": "d5c2e638",
+      "name": "latency_spike",
+      "severity": "warning",
+      "message": "Latencia 249ms supera el umbral operativo en el paso 6",
+      "timestamp": "2026-07-20T00:53:50.740319+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.031054+00:00",
+    "nivel": "warning",
+    "mensaje": "ALERTA[warning] Drift detectado (PSI máx=12.43) en el paso 8",
+    "contexto": {
+      "id": "d0f0bc22",
+      "name": "data_drift",
+      "severity": "warning",
+      "message": "Drift detectado (PSI máx=12.43) en el paso 8",
+      "timestamp": "2026-07-20T00:53:51.030963+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.031172+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: reentrenamiento_automatico",
+    "contexto": {
+      "runbook": "reentrenamiento_automatico",
+      "detalle": "Disparando pipeline de reentrenamiento. Motivo: data drift detectado en features de entrada",
+      "resultado": "encolado",
+      "timestamp": "2026-07-20T00:53:51.031162+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.031198+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: Drift detectado (PSI máx=12.43) en el paso 8",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:51.031190+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.031214+00:00",
+    "nivel": "critical",
+    "mensaje": "ALERTA[critical] RMSE 1.79 supera el SLO (0.70) en el paso 8",
+    "contexto": {
+      "id": "7c63b998",
+      "name": "rmse_degradation",
+      "severity": "critical",
+      "message": "RMSE 1.79 supera el SLO (0.70) en el paso 8",
+      "timestamp": "2026-07-20T00:53:51.030996+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.031239+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: rollback_modelo",
+    "contexto": {
+      "runbook": "rollback_modelo",
+      "detalle": "Revirtiendo despliegue de v3 a v2",
+      "resultado": "ejecutado",
+      "timestamp": "2026-07-20T00:53:51.031231+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.031259+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: RMSE 1.79 supera el SLO (0.70) en el paso 8",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:51.031252+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.031276+00:00",
+    "nivel": "critical",
+    "mensaje": "ALERTA[critical] R² -1.33 cae por debajo del SLO (0.63) en el paso 8",
+    "contexto": {
+      "id": "25be7e03",
+      "name": "r2_degradation",
+      "severity": "critical",
+      "message": "R² -1.33 cae por debajo del SLO (0.63) en el paso 8",
+      "timestamp": "2026-07-20T00:53:51.031017+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.031297+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: rollback_modelo",
+    "contexto": {
+      "runbook": "rollback_modelo",
+      "detalle": "Revirtiendo despliegue de v3 a v2",
+      "resultado": "ejecutado",
+      "timestamp": "2026-07-20T00:53:51.031290+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.031317+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: R² -1.33 cae por debajo del SLO (0.63) en el paso 8",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:51.031311+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.031330+00:00",
+    "nivel": "critical",
+    "mensaje": "ALERTA[critical] Error budget agotado en el paso 8",
+    "contexto": {
+      "id": "55fdaa06",
+      "name": "error_budget_exhausted",
+      "severity": "critical",
+      "message": "Error budget agotado en el paso 8",
+      "timestamp": "2026-07-20T00:53:51.031034+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.031349+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: rollback_modelo",
+    "contexto": {
+      "runbook": "rollback_modelo",
+      "detalle": "Revirtiendo despliegue de v3 a v2",
+      "resultado": "ejecutado",
+      "timestamp": "2026-07-20T00:53:51.031343+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.031366+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: Error budget agotado en el paso 8",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:51.031361+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.206858+00:00",
+    "nivel": "warning",
+    "mensaje": "ALERTA[warning] Drift detectado (PSI máx=12.43) en el paso 9",
+    "contexto": {
+      "id": "084ed9a7",
+      "name": "data_drift",
+      "severity": "warning",
+      "message": "Drift detectado (PSI máx=12.43) en el paso 9",
+      "timestamp": "2026-07-20T00:53:51.206760+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.206907+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: reentrenamiento_automatico",
+    "contexto": {
+      "runbook": "reentrenamiento_automatico",
+      "detalle": "Disparando pipeline de reentrenamiento. Motivo: data drift detectado en features de entrada",
+      "resultado": "encolado",
+      "timestamp": "2026-07-20T00:53:51.206899+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.206930+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: Drift detectado (PSI máx=12.43) en el paso 9",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:51.206924+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.206943+00:00",
+    "nivel": "critical",
+    "mensaje": "ALERTA[critical] RMSE 1.90 supera el SLO (0.70) en el paso 9",
+    "contexto": {
+      "id": "f602496b",
+      "name": "rmse_degradation",
+      "severity": "critical",
+      "message": "RMSE 1.90 supera el SLO (0.70) en el paso 9",
+      "timestamp": "2026-07-20T00:53:51.206803+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.206963+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: rollback_modelo",
+    "contexto": {
+      "runbook": "rollback_modelo",
+      "detalle": "Revirtiendo despliegue de v3 a v2",
+      "resultado": "ejecutado",
+      "timestamp": "2026-07-20T00:53:51.206957+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.206980+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: RMSE 1.90 supera el SLO (0.70) en el paso 9",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:51.206974+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.206993+00:00",
+    "nivel": "critical",
+    "mensaje": "ALERTA[critical] R² -2.14 cae por debajo del SLO (0.63) en el paso 9",
+    "contexto": {
+      "id": "7847323a",
+      "name": "r2_degradation",
+      "severity": "critical",
+      "message": "R² -2.14 cae por debajo del SLO (0.63) en el paso 9",
+      "timestamp": "2026-07-20T00:53:51.206824+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.207010+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: rollback_modelo",
+    "contexto": {
+      "runbook": "rollback_modelo",
+      "detalle": "Revirtiendo despliegue de v3 a v2",
+      "resultado": "ejecutado",
+      "timestamp": "2026-07-20T00:53:51.207004+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.207027+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: R² -2.14 cae por debajo del SLO (0.63) en el paso 9",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:51.207021+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.207039+00:00",
+    "nivel": "critical",
+    "mensaje": "ALERTA[critical] Error budget agotado en el paso 9",
+    "contexto": {
+      "id": "7c419d2c",
+      "name": "error_budget_exhausted",
+      "severity": "critical",
+      "message": "Error budget agotado en el paso 9",
+      "timestamp": "2026-07-20T00:53:51.206840+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.207055+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: rollback_modelo",
+    "contexto": {
+      "runbook": "rollback_modelo",
+      "detalle": "Revirtiendo despliegue de v3 a v2",
+      "resultado": "ejecutado",
+      "timestamp": "2026-07-20T00:53:51.207050+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.207074+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: Error budget agotado en el paso 9",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:51.207067+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.352395+00:00",
+    "nivel": "warning",
+    "mensaje": "ALERTA[warning] Drift detectado (PSI máx=12.43) en el paso 10",
+    "contexto": {
+      "id": "1961946e",
+      "name": "data_drift",
+      "severity": "warning",
+      "message": "Drift detectado (PSI máx=12.43) en el paso 10",
+      "timestamp": "2026-07-20T00:53:51.352277+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.352524+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: reentrenamiento_automatico",
+    "contexto": {
+      "runbook": "reentrenamiento_automatico",
+      "detalle": "Disparando pipeline de reentrenamiento. Motivo: data drift detectado en features de entrada",
+      "resultado": "encolado",
+      "timestamp": "2026-07-20T00:53:51.352509+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.352556+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: Drift detectado (PSI máx=12.43) en el paso 10",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:51.352548+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.352573+00:00",
+    "nivel": "critical",
+    "mensaje": "ALERTA[critical] RMSE 1.93 supera el SLO (0.70) en el paso 10",
+    "contexto": {
+      "id": "fc532783",
+      "name": "rmse_degradation",
+      "severity": "critical",
+      "message": "RMSE 1.93 supera el SLO (0.70) en el paso 10",
+      "timestamp": "2026-07-20T00:53:51.352321+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.352598+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: rollback_modelo",
+    "contexto": {
+      "runbook": "rollback_modelo",
+      "detalle": "Revirtiendo despliegue de v3 a v2",
+      "resultado": "ejecutado",
+      "timestamp": "2026-07-20T00:53:51.352591+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.352616+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: RMSE 1.93 supera el SLO (0.70) en el paso 10",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:51.352610+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.352632+00:00",
+    "nivel": "critical",
+    "mensaje": "ALERTA[critical] R² -1.44 cae por debajo del SLO (0.63) en el paso 10",
+    "contexto": {
+      "id": "137b2411",
+      "name": "r2_degradation",
+      "severity": "critical",
+      "message": "R² -1.44 cae por debajo del SLO (0.63) en el paso 10",
+      "timestamp": "2026-07-20T00:53:51.352351+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.352652+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: rollback_modelo",
+    "contexto": {
+      "runbook": "rollback_modelo",
+      "detalle": "Revirtiendo despliegue de v3 a v2",
+      "resultado": "ejecutado",
+      "timestamp": "2026-07-20T00:53:51.352645+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.352673+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: R² -1.44 cae por debajo del SLO (0.63) en el paso 10",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:51.352666+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.352687+00:00",
+    "nivel": "critical",
+    "mensaje": "ALERTA[critical] Error budget agotado en el paso 10",
+    "contexto": {
+      "id": "c632a0ac",
+      "name": "error_budget_exhausted",
+      "severity": "critical",
+      "message": "Error budget agotado en el paso 10",
+      "timestamp": "2026-07-20T00:53:51.352374+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.352707+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: rollback_modelo",
+    "contexto": {
+      "runbook": "rollback_modelo",
+      "detalle": "Revirtiendo despliegue de v3 a v2",
+      "resultado": "ejecutado",
+      "timestamp": "2026-07-20T00:53:51.352701+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.352728+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: Error budget agotado en el paso 10",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:51.352721+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.486725+00:00",
+    "nivel": "warning",
+    "mensaje": "ALERTA[warning] Drift detectado (PSI máx=12.43) en el paso 11",
+    "contexto": {
+      "id": "9ccf1b20",
+      "name": "data_drift",
+      "severity": "warning",
+      "message": "Drift detectado (PSI máx=12.43) en el paso 11",
+      "timestamp": "2026-07-20T00:53:51.486658+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.486781+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: reentrenamiento_automatico",
+    "contexto": {
+      "runbook": "reentrenamiento_automatico",
+      "detalle": "Disparando pipeline de reentrenamiento. Motivo: data drift detectado en features de entrada",
+      "resultado": "encolado",
+      "timestamp": "2026-07-20T00:53:51.486775+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.486799+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: Drift detectado (PSI máx=12.43) en el paso 11",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:51.486794+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.486811+00:00",
+    "nivel": "critical",
+    "mensaje": "ALERTA[critical] RMSE 3.29 supera el SLO (0.70) en el paso 11",
+    "contexto": {
+      "id": "1438f937",
+      "name": "rmse_degradation",
+      "severity": "critical",
+      "message": "RMSE 3.29 supera el SLO (0.70) en el paso 11",
+      "timestamp": "2026-07-20T00:53:51.486686+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.486835+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: rollback_modelo",
+    "contexto": {
+      "runbook": "rollback_modelo",
+      "detalle": "Revirtiendo despliegue de v3 a v2",
+      "resultado": "ejecutado",
+      "timestamp": "2026-07-20T00:53:51.486821+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.486845+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: RMSE 3.29 supera el SLO (0.70) en el paso 11",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:51.486842+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.486854+00:00",
+    "nivel": "critical",
+    "mensaje": "ALERTA[critical] R² -0.53 cae por debajo del SLO (0.63) en el paso 11",
+    "contexto": {
+      "id": "1a5cd63c",
+      "name": "r2_degradation",
+      "severity": "critical",
+      "message": "R² -0.53 cae por debajo del SLO (0.63) en el paso 11",
+      "timestamp": "2026-07-20T00:53:51.486700+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.486866+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: rollback_modelo",
+    "contexto": {
+      "runbook": "rollback_modelo",
+      "detalle": "Revirtiendo despliegue de v3 a v2",
+      "resultado": "ejecutado",
+      "timestamp": "2026-07-20T00:53:51.486861+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.486877+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: R² -0.53 cae por debajo del SLO (0.63) en el paso 11",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:51.486874+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.486884+00:00",
+    "nivel": "critical",
+    "mensaje": "ALERTA[critical] Error budget agotado en el paso 11",
+    "contexto": {
+      "id": "bfb365ba",
+      "name": "error_budget_exhausted",
+      "severity": "critical",
+      "message": "Error budget agotado en el paso 11",
+      "timestamp": "2026-07-20T00:53:51.486712+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.486895+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: rollback_modelo",
+    "contexto": {
+      "runbook": "rollback_modelo",
+      "detalle": "Revirtiendo despliegue de v3 a v2",
+      "resultado": "ejecutado",
+      "timestamp": "2026-07-20T00:53:51.486891+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.486906+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: Error budget agotado en el paso 11",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:51.486902+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.629079+00:00",
+    "nivel": "warning",
+    "mensaje": "ALERTA[warning] Drift detectado (PSI máx=12.43) en el paso 12",
+    "contexto": {
+      "id": "dafbd5a9",
+      "name": "data_drift",
+      "severity": "warning",
+      "message": "Drift detectado (PSI máx=12.43) en el paso 12",
+      "timestamp": "2026-07-20T00:53:51.629017+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.629194+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: reentrenamiento_automatico",
+    "contexto": {
+      "runbook": "reentrenamiento_automatico",
+      "detalle": "Disparando pipeline de reentrenamiento. Motivo: data drift detectado en features de entrada",
+      "resultado": "encolado",
+      "timestamp": "2026-07-20T00:53:51.629185+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.629253+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: Drift detectado (PSI máx=12.43) en el paso 12",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:51.629248+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.629264+00:00",
+    "nivel": "critical",
+    "mensaje": "ALERTA[critical] RMSE 3.11 supera el SLO (0.70) en el paso 12",
+    "contexto": {
+      "id": "7847855d",
+      "name": "rmse_degradation",
+      "severity": "critical",
+      "message": "RMSE 3.11 supera el SLO (0.70) en el paso 12",
+      "timestamp": "2026-07-20T00:53:51.629042+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.629278+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: rollback_modelo",
+    "contexto": {
+      "runbook": "rollback_modelo",
+      "detalle": "Revirtiendo despliegue de v3 a v2",
+      "resultado": "ejecutado",
+      "timestamp": "2026-07-20T00:53:51.629274+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.629289+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: RMSE 3.11 supera el SLO (0.70) en el paso 12",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:51.629286+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.629299+00:00",
+    "nivel": "critical",
+    "mensaje": "ALERTA[critical] R² -0.39 cae por debajo del SLO (0.63) en el paso 12",
+    "contexto": {
+      "id": "df6d95b7",
+      "name": "r2_degradation",
+      "severity": "critical",
+      "message": "R² -0.39 cae por debajo del SLO (0.63) en el paso 12",
+      "timestamp": "2026-07-20T00:53:51.629056+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.629311+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: rollback_modelo",
+    "contexto": {
+      "runbook": "rollback_modelo",
+      "detalle": "Revirtiendo despliegue de v3 a v2",
+      "resultado": "ejecutado",
+      "timestamp": "2026-07-20T00:53:51.629307+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.629322+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: R² -0.39 cae por debajo del SLO (0.63) en el paso 12",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:51.629319+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.629329+00:00",
+    "nivel": "critical",
+    "mensaje": "ALERTA[critical] Error budget agotado en el paso 12",
+    "contexto": {
+      "id": "6afe4b2e",
+      "name": "error_budget_exhausted",
+      "severity": "critical",
+      "message": "Error budget agotado en el paso 12",
+      "timestamp": "2026-07-20T00:53:51.629067+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.629341+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: rollback_modelo",
+    "contexto": {
+      "runbook": "rollback_modelo",
+      "detalle": "Revirtiendo despliegue de v3 a v2",
+      "resultado": "ejecutado",
+      "timestamp": "2026-07-20T00:53:51.629337+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.629354+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: Error budget agotado en el paso 12",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:51.629351+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.767020+00:00",
+    "nivel": "warning",
+    "mensaje": "ALERTA[warning] Drift detectado (PSI máx=12.43) en el paso 13",
+    "contexto": {
+      "id": "1db185e0",
+      "name": "data_drift",
+      "severity": "warning",
+      "message": "Drift detectado (PSI máx=12.43) en el paso 13",
+      "timestamp": "2026-07-20T00:53:51.766918+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.767075+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: reentrenamiento_automatico",
+    "contexto": {
+      "runbook": "reentrenamiento_automatico",
+      "detalle": "Disparando pipeline de reentrenamiento. Motivo: data drift detectado en features de entrada",
+      "resultado": "encolado",
+      "timestamp": "2026-07-20T00:53:51.767057+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.767102+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: Drift detectado (PSI máx=12.43) en el paso 13",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:51.767096+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.767117+00:00",
+    "nivel": "critical",
+    "mensaje": "ALERTA[critical] RMSE 3.12 supera el SLO (0.70) en el paso 13",
+    "contexto": {
+      "id": "3ffad8d9",
+      "name": "rmse_degradation",
+      "severity": "critical",
+      "message": "RMSE 3.12 supera el SLO (0.70) en el paso 13",
+      "timestamp": "2026-07-20T00:53:51.766956+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.767140+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: rollback_modelo",
+    "contexto": {
+      "runbook": "rollback_modelo",
+      "detalle": "Revirtiendo despliegue de v3 a v2",
+      "resultado": "ejecutado",
+      "timestamp": "2026-07-20T00:53:51.767132+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.767158+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: RMSE 3.12 supera el SLO (0.70) en el paso 13",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:51.767151+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.767172+00:00",
+    "nivel": "critical",
+    "mensaje": "ALERTA[critical] R² -0.12 cae por debajo del SLO (0.63) en el paso 13",
+    "contexto": {
+      "id": "5bc392b6",
+      "name": "r2_degradation",
+      "severity": "critical",
+      "message": "R² -0.12 cae por debajo del SLO (0.63) en el paso 13",
+      "timestamp": "2026-07-20T00:53:51.766979+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.767192+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: rollback_modelo",
+    "contexto": {
+      "runbook": "rollback_modelo",
+      "detalle": "Revirtiendo despliegue de v3 a v2",
+      "resultado": "ejecutado",
+      "timestamp": "2026-07-20T00:53:51.767185+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.767211+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: R² -0.12 cae por debajo del SLO (0.63) en el paso 13",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:51.767205+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.767224+00:00",
+    "nivel": "critical",
+    "mensaje": "ALERTA[critical] Error budget agotado en el paso 13",
+    "contexto": {
+      "id": "92d0653f",
+      "name": "error_budget_exhausted",
+      "severity": "critical",
+      "message": "Error budget agotado en el paso 13",
+      "timestamp": "2026-07-20T00:53:51.766999+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.767241+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: rollback_modelo",
+    "contexto": {
+      "runbook": "rollback_modelo",
+      "detalle": "Revirtiendo despliegue de v3 a v2",
+      "resultado": "ejecutado",
+      "timestamp": "2026-07-20T00:53:51.767235+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.767260+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: Error budget agotado en el paso 13",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:51.767254+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.903892+00:00",
+    "nivel": "warning",
+    "mensaje": "ALERTA[warning] Drift detectado (PSI máx=12.43) en el paso 14",
+    "contexto": {
+      "id": "a82702ad",
+      "name": "data_drift",
+      "severity": "warning",
+      "message": "Drift detectado (PSI máx=12.43) en el paso 14",
+      "timestamp": "2026-07-20T00:53:51.903827+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.904022+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: reentrenamiento_automatico",
+    "contexto": {
+      "runbook": "reentrenamiento_automatico",
+      "detalle": "Disparando pipeline de reentrenamiento. Motivo: data drift detectado en features de entrada",
+      "resultado": "encolado",
+      "timestamp": "2026-07-20T00:53:51.904011+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.904047+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: Drift detectado (PSI máx=12.43) en el paso 14",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:51.904039+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.904062+00:00",
+    "nivel": "critical",
+    "mensaje": "ALERTA[critical] RMSE 2.75 supera el SLO (0.70) en el paso 14",
+    "contexto": {
+      "id": "9227e2fa",
+      "name": "rmse_degradation",
+      "severity": "critical",
+      "message": "RMSE 2.75 supera el SLO (0.70) en el paso 14",
+      "timestamp": "2026-07-20T00:53:51.903853+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.904077+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: rollback_modelo",
+    "contexto": {
+      "runbook": "rollback_modelo",
+      "detalle": "Revirtiendo despliegue de v3 a v2",
+      "resultado": "ejecutado",
+      "timestamp": "2026-07-20T00:53:51.904073+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.904087+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: RMSE 2.75 supera el SLO (0.70) en el paso 14",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:51.904084+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.904096+00:00",
+    "nivel": "critical",
+    "mensaje": "ALERTA[critical] R² -0.26 cae por debajo del SLO (0.63) en el paso 14",
+    "contexto": {
+      "id": "5b4a6036",
+      "name": "r2_degradation",
+      "severity": "critical",
+      "message": "R² -0.26 cae por debajo del SLO (0.63) en el paso 14",
+      "timestamp": "2026-07-20T00:53:51.903867+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.904107+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: rollback_modelo",
+    "contexto": {
+      "runbook": "rollback_modelo",
+      "detalle": "Revirtiendo despliegue de v3 a v2",
+      "resultado": "ejecutado",
+      "timestamp": "2026-07-20T00:53:51.904103+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.904125+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: R² -0.26 cae por debajo del SLO (0.63) en el paso 14",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:51.904119+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.904135+00:00",
+    "nivel": "critical",
+    "mensaje": "ALERTA[critical] Error budget agotado en el paso 14",
+    "contexto": {
+      "id": "fb7a73a1",
+      "name": "error_budget_exhausted",
+      "severity": "critical",
+      "message": "Error budget agotado en el paso 14",
+      "timestamp": "2026-07-20T00:53:51.903879+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.904150+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: rollback_modelo",
+    "contexto": {
+      "runbook": "rollback_modelo",
+      "detalle": "Revirtiendo despliegue de v3 a v2",
+      "resultado": "ejecutado",
+      "timestamp": "2026-07-20T00:53:51.904146+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:51.904161+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: Error budget agotado en el paso 14",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:51.904158+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:52.025988+00:00",
+    "nivel": "warning",
+    "mensaje": "ALERTA[warning] Drift detectado (PSI máx=11.31) en el paso 15",
+    "contexto": {
+      "id": "25a5bc36",
+      "name": "data_drift",
+      "severity": "warning",
+      "message": "Drift detectado (PSI máx=11.31) en el paso 15",
+      "timestamp": "2026-07-20T00:53:52.025920+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:52.026023+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: reentrenamiento_automatico",
+    "contexto": {
+      "runbook": "reentrenamiento_automatico",
+      "detalle": "Disparando pipeline de reentrenamiento. Motivo: data drift detectado en features de entrada",
+      "resultado": "encolado",
+      "timestamp": "2026-07-20T00:53:52.026017+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:52.026038+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: Drift detectado (PSI máx=11.31) en el paso 15",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:52.026035+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:52.026047+00:00",
+    "nivel": "critical",
+    "mensaje": "ALERTA[critical] RMSE 2.96 supera el SLO (0.70) en el paso 15",
+    "contexto": {
+      "id": "6e870aaf",
+      "name": "rmse_degradation",
+      "severity": "critical",
+      "message": "RMSE 2.96 supera el SLO (0.70) en el paso 15",
+      "timestamp": "2026-07-20T00:53:52.025946+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:52.026060+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: rollback_modelo",
+    "contexto": {
+      "runbook": "rollback_modelo",
+      "detalle": "Revirtiendo despliegue de v3 a v2",
+      "resultado": "ejecutado",
+      "timestamp": "2026-07-20T00:53:52.026056+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:52.026070+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: RMSE 2.96 supera el SLO (0.70) en el paso 15",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:52.026067+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:52.026083+00:00",
+    "nivel": "critical",
+    "mensaje": "ALERTA[critical] R² -0.56 cae por debajo del SLO (0.63) en el paso 15",
+    "contexto": {
+      "id": "4962baac",
+      "name": "r2_degradation",
+      "severity": "critical",
+      "message": "R² -0.56 cae por debajo del SLO (0.63) en el paso 15",
+      "timestamp": "2026-07-20T00:53:52.025961+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:52.026095+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: rollback_modelo",
+    "contexto": {
+      "runbook": "rollback_modelo",
+      "detalle": "Revirtiendo despliegue de v3 a v2",
+      "resultado": "ejecutado",
+      "timestamp": "2026-07-20T00:53:52.026091+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:52.026105+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: R² -0.56 cae por debajo del SLO (0.63) en el paso 15",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:52.026102+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:52.026112+00:00",
+    "nivel": "critical",
+    "mensaje": "ALERTA[critical] Error budget agotado en el paso 15",
+    "contexto": {
+      "id": "0924f002",
+      "name": "error_budget_exhausted",
+      "severity": "critical",
+      "message": "Error budget agotado en el paso 15",
+      "timestamp": "2026-07-20T00:53:52.025974+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:52.026123+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: rollback_modelo",
+    "contexto": {
+      "runbook": "rollback_modelo",
+      "detalle": "Revirtiendo despliegue de v3 a v2",
+      "resultado": "ejecutado",
+      "timestamp": "2026-07-20T00:53:52.026119+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T00:53:52.026133+00:00",
+    "nivel": "warning",
+    "mensaje": "Runbook ejecutado: notificar_equipo_guardia",
+    "contexto": {
+      "runbook": "notificar_equipo_guardia",
+      "detalle": "Notificando on-call: Error budget agotado en el paso 15",
+      "resultado": "enviado",
+      "timestamp": "2026-07-20T00:53:52.026130+00:00"
+    }
+  }
+]
