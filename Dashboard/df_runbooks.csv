@@ -1,0 +1,69 @@
+runbook,detalle,resultado,timestamp
+rollback_modelo,Revirtiendo despliegue de v3 a v2,ejecutado,2026-07-20T00:53:50.183692+00:00
+notificar_equipo_guardia,Notificando on-call: Error budget agotado en el paso 2,enviado,2026-07-20T00:53:50.183719+00:00
+rollback_modelo,Revirtiendo despliegue de v3 a v2,ejecutado,2026-07-20T00:53:50.317621+00:00
+notificar_equipo_guardia,Notificando on-call: Error budget agotado en el paso 3,enviado,2026-07-20T00:53:50.317645+00:00
+reentrenamiento_automatico,Disparando pipeline de reentrenamiento. Motivo: data drift detectado en features de entrada,encolado,2026-07-20T00:53:51.031162+00:00
+notificar_equipo_guardia,Notificando on-call: Drift detectado (PSI máx=12.43) en el paso 8,enviado,2026-07-20T00:53:51.031190+00:00
+rollback_modelo,Revirtiendo despliegue de v3 a v2,ejecutado,2026-07-20T00:53:51.031231+00:00
+notificar_equipo_guardia,Notificando on-call: RMSE 1.79 supera el SLO (0.70) en el paso 8,enviado,2026-07-20T00:53:51.031252+00:00
+rollback_modelo,Revirtiendo despliegue de v3 a v2,ejecutado,2026-07-20T00:53:51.031290+00:00
+notificar_equipo_guardia,Notificando on-call: R² -1.33 cae por debajo del SLO (0.63) en el paso 8,enviado,2026-07-20T00:53:51.031311+00:00
+rollback_modelo,Revirtiendo despliegue de v3 a v2,ejecutado,2026-07-20T00:53:51.031343+00:00
+notificar_equipo_guardia,Notificando on-call: Error budget agotado en el paso 8,enviado,2026-07-20T00:53:51.031361+00:00
+reentrenamiento_automatico,Disparando pipeline de reentrenamiento. Motivo: data drift detectado en features de entrada,encolado,2026-07-20T00:53:51.206899+00:00
+notificar_equipo_guardia,Notificando on-call: Drift detectado (PSI máx=12.43) en el paso 9,enviado,2026-07-20T00:53:51.206924+00:00
+rollback_modelo,Revirtiendo despliegue de v3 a v2,ejecutado,2026-07-20T00:53:51.206957+00:00
+notificar_equipo_guardia,Notificando on-call: RMSE 1.90 supera el SLO (0.70) en el paso 9,enviado,2026-07-20T00:53:51.206974+00:00
+rollback_modelo,Revirtiendo despliegue de v3 a v2,ejecutado,2026-07-20T00:53:51.207004+00:00
+notificar_equipo_guardia,Notificando on-call: R² -2.14 cae por debajo del SLO (0.63) en el paso 9,enviado,2026-07-20T00:53:51.207021+00:00
+rollback_modelo,Revirtiendo despliegue de v3 a v2,ejecutado,2026-07-20T00:53:51.207050+00:00
+notificar_equipo_guardia,Notificando on-call: Error budget agotado en el paso 9,enviado,2026-07-20T00:53:51.207067+00:00
+reentrenamiento_automatico,Disparando pipeline de reentrenamiento. Motivo: data drift detectado en features de entrada,encolado,2026-07-20T00:53:51.352509+00:00
+notificar_equipo_guardia,Notificando on-call: Drift detectado (PSI máx=12.43) en el paso 10,enviado,2026-07-20T00:53:51.352548+00:00
+rollback_modelo,Revirtiendo despliegue de v3 a v2,ejecutado,2026-07-20T00:53:51.352591+00:00
+notificar_equipo_guardia,Notificando on-call: RMSE 1.93 supera el SLO (0.70) en el paso 10,enviado,2026-07-20T00:53:51.352610+00:00
+rollback_modelo,Revirtiendo despliegue de v3 a v2,ejecutado,2026-07-20T00:53:51.352645+00:00
+notificar_equipo_guardia,Notificando on-call: R² -1.44 cae por debajo del SLO (0.63) en el paso 10,enviado,2026-07-20T00:53:51.352666+00:00
+rollback_modelo,Revirtiendo despliegue de v3 a v2,ejecutado,2026-07-20T00:53:51.352701+00:00
+notificar_equipo_guardia,Notificando on-call: Error budget agotado en el paso 10,enviado,2026-07-20T00:53:51.352721+00:00
+reentrenamiento_automatico,Disparando pipeline de reentrenamiento. Motivo: data drift detectado en features de entrada,encolado,2026-07-20T00:53:51.486775+00:00
+notificar_equipo_guardia,Notificando on-call: Drift detectado (PSI máx=12.43) en el paso 11,enviado,2026-07-20T00:53:51.486794+00:00
+rollback_modelo,Revirtiendo despliegue de v3 a v2,ejecutado,2026-07-20T00:53:51.486821+00:00
+notificar_equipo_guardia,Notificando on-call: RMSE 3.29 supera el SLO (0.70) en el paso 11,enviado,2026-07-20T00:53:51.486842+00:00
+rollback_modelo,Revirtiendo despliegue de v3 a v2,ejecutado,2026-07-20T00:53:51.486861+00:00
+notificar_equipo_guardia,Notificando on-call: R² -0.53 cae por debajo del SLO (0.63) en el paso 11,enviado,2026-07-20T00:53:51.486874+00:00
+rollback_modelo,Revirtiendo despliegue de v3 a v2,ejecutado,2026-07-20T00:53:51.486891+00:00
+notificar_equipo_guardia,Notificando on-call: Error budget agotado en el paso 11,enviado,2026-07-20T00:53:51.486902+00:00
+reentrenamiento_automatico,Disparando pipeline de reentrenamiento. Motivo: data drift detectado en features de entrada,encolado,2026-07-20T00:53:51.629185+00:00
+notificar_equipo_guardia,Notificando on-call: Drift detectado (PSI máx=12.43) en el paso 12,enviado,2026-07-20T00:53:51.629248+00:00
+rollback_modelo,Revirtiendo despliegue de v3 a v2,ejecutado,2026-07-20T00:53:51.629274+00:00
+notificar_equipo_guardia,Notificando on-call: RMSE 3.11 supera el SLO (0.70) en el paso 12,enviado,2026-07-20T00:53:51.629286+00:00
+rollback_modelo,Revirtiendo despliegue de v3 a v2,ejecutado,2026-07-20T00:53:51.629307+00:00
+notificar_equipo_guardia,Notificando on-call: R² -0.39 cae por debajo del SLO (0.63) en el paso 12,enviado,2026-07-20T00:53:51.629319+00:00
+rollback_modelo,Revirtiendo despliegue de v3 a v2,ejecutado,2026-07-20T00:53:51.629337+00:00
+notificar_equipo_guardia,Notificando on-call: Error budget agotado en el paso 12,enviado,2026-07-20T00:53:51.629351+00:00
+reentrenamiento_automatico,Disparando pipeline de reentrenamiento. Motivo: data drift detectado en features de entrada,encolado,2026-07-20T00:53:51.767057+00:00
+notificar_equipo_guardia,Notificando on-call: Drift detectado (PSI máx=12.43) en el paso 13,enviado,2026-07-20T00:53:51.767096+00:00
+rollback_modelo,Revirtiendo despliegue de v3 a v2,ejecutado,2026-07-20T00:53:51.767132+00:00
+notificar_equipo_guardia,Notificando on-call: RMSE 3.12 supera el SLO (0.70) en el paso 13,enviado,2026-07-20T00:53:51.767151+00:00
+rollback_modelo,Revirtiendo despliegue de v3 a v2,ejecutado,2026-07-20T00:53:51.767185+00:00
+notificar_equipo_guardia,Notificando on-call: R² -0.12 cae por debajo del SLO (0.63) en el paso 13,enviado,2026-07-20T00:53:51.767205+00:00
+rollback_modelo,Revirtiendo despliegue de v3 a v2,ejecutado,2026-07-20T00:53:51.767235+00:00
+notificar_equipo_guardia,Notificando on-call: Error budget agotado en el paso 13,enviado,2026-07-20T00:53:51.767254+00:00
+reentrenamiento_automatico,Disparando pipeline de reentrenamiento. Motivo: data drift detectado en features de entrada,encolado,2026-07-20T00:53:51.904011+00:00
+notificar_equipo_guardia,Notificando on-call: Drift detectado (PSI máx=12.43) en el paso 14,enviado,2026-07-20T00:53:51.904039+00:00
+rollback_modelo,Revirtiendo despliegue de v3 a v2,ejecutado,2026-07-20T00:53:51.904073+00:00
+notificar_equipo_guardia,Notificando on-call: RMSE 2.75 supera el SLO (0.70) en el paso 14,enviado,2026-07-20T00:53:51.904084+00:00
+rollback_modelo,Revirtiendo despliegue de v3 a v2,ejecutado,2026-07-20T00:53:51.904103+00:00
+notificar_equipo_guardia,Notificando on-call: R² -0.26 cae por debajo del SLO (0.63) en el paso 14,enviado,2026-07-20T00:53:51.904119+00:00
+rollback_modelo,Revirtiendo despliegue de v3 a v2,ejecutado,2026-07-20T00:53:51.904146+00:00
+notificar_equipo_guardia,Notificando on-call: Error budget agotado en el paso 14,enviado,2026-07-20T00:53:51.904158+00:00
+reentrenamiento_automatico,Disparando pipeline de reentrenamiento. Motivo: data drift detectado en features de entrada,encolado,2026-07-20T00:53:52.026017+00:00
+notificar_equipo_guardia,Notificando on-call: Drift detectado (PSI máx=11.31) en el paso 15,enviado,2026-07-20T00:53:52.026035+00:00
+rollback_modelo,Revirtiendo despliegue de v3 a v2,ejecutado,2026-07-20T00:53:52.026056+00:00
+notificar_equipo_guardia,Notificando on-call: RMSE 2.96 supera el SLO (0.70) en el paso 15,enviado,2026-07-20T00:53:52.026067+00:00
+rollback_modelo,Revirtiendo despliegue de v3 a v2,ejecutado,2026-07-20T00:53:52.026091+00:00
+notificar_equipo_guardia,Notificando on-call: R² -0.56 cae por debajo del SLO (0.63) en el paso 15,enviado,2026-07-20T00:53:52.026102+00:00
+rollback_modelo,Revirtiendo despliegue de v3 a v2,ejecutado,2026-07-20T00:53:52.026119+00:00
+notificar_equipo_guardia,Notificando on-call: Error budget agotado en el paso 15,enviado,2026-07-20T00:53:52.026130+00:00
