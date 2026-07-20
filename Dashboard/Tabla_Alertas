@@ -1,0 +1,38 @@
+|index|id|name|severity|message|timestamp|
+|---|---|---|---|---|---|
+|0|d79759c6|error\_budget\_exhausted|critical|Error budget agotado en el paso 2|2026-07-20T00:53:50\.183550+00:00|
+|1|ad4bedcc|error\_budget\_exhausted|critical|Error budget agotado en el paso 3|2026-07-20T00:53:50\.317541+00:00|
+|2|726dd524|latency\_spike|warning|Latencia 235ms supera el umbral operativo en el paso 5|2026-07-20T00:53:50\.585772+00:00|
+|3|d5c2e638|latency\_spike|warning|Latencia 249ms supera el umbral operativo en el paso 6|2026-07-20T00:53:50\.740319+00:00|
+|4|d0f0bc22|data\_drift|warning|Drift detectado \(PSI máx=12\.43\) en el paso 8|2026-07-20T00:53:51\.030963+00:00|
+|5|7c63b998|rmse\_degradation|critical|RMSE 1\.79 supera el SLO \(0\.70\) en el paso 8|2026-07-20T00:53:51\.030996+00:00|
+|6|25be7e03|r2\_degradation|critical|R² -1\.33 cae por debajo del SLO \(0\.63\) en el paso 8|2026-07-20T00:53:51\.031017+00:00|
+|7|55fdaa06|error\_budget\_exhausted|critical|Error budget agotado en el paso 8|2026-07-20T00:53:51\.031034+00:00|
+|8|084ed9a7|data\_drift|warning|Drift detectado \(PSI máx=12\.43\) en el paso 9|2026-07-20T00:53:51\.206760+00:00|
+|9|f602496b|rmse\_degradation|critical|RMSE 1\.90 supera el SLO \(0\.70\) en el paso 9|2026-07-20T00:53:51\.206803+00:00|
+|10|7847323a|r2\_degradation|critical|R² -2\.14 cae por debajo del SLO \(0\.63\) en el paso 9|2026-07-20T00:53:51\.206824+00:00|
+|11|7c419d2c|error\_budget\_exhausted|critical|Error budget agotado en el paso 9|2026-07-20T00:53:51\.206840+00:00|
+|12|1961946e|data\_drift|warning|Drift detectado \(PSI máx=12\.43\) en el paso 10|2026-07-20T00:53:51\.352277+00:00|
+|13|fc532783|rmse\_degradation|critical|RMSE 1\.93 supera el SLO \(0\.70\) en el paso 10|2026-07-20T00:53:51\.352321+00:00|
+|14|137b2411|r2\_degradation|critical|R² -1\.44 cae por debajo del SLO \(0\.63\) en el paso 10|2026-07-20T00:53:51\.352351+00:00|
+|15|c632a0ac|error\_budget\_exhausted|critical|Error budget agotado en el paso 10|2026-07-20T00:53:51\.352374+00:00|
+|16|9ccf1b20|data\_drift|warning|Drift detectado \(PSI máx=12\.43\) en el paso 11|2026-07-20T00:53:51\.486658+00:00|
+|17|1438f937|rmse\_degradation|critical|RMSE 3\.29 supera el SLO \(0\.70\) en el paso 11|2026-07-20T00:53:51\.486686+00:00|
+|18|1a5cd63c|r2\_degradation|critical|R² -0\.53 cae por debajo del SLO \(0\.63\) en el paso 11|2026-07-20T00:53:51\.486700+00:00|
+|19|bfb365ba|error\_budget\_exhausted|critical|Error budget agotado en el paso 11|2026-07-20T00:53:51\.486712+00:00|
+|20|dafbd5a9|data\_drift|warning|Drift detectado \(PSI máx=12\.43\) en el paso 12|2026-07-20T00:53:51\.629017+00:00|
+|21|7847855d|rmse\_degradation|critical|RMSE 3\.11 supera el SLO \(0\.70\) en el paso 12|2026-07-20T00:53:51\.629042+00:00|
+|22|df6d95b7|r2\_degradation|critical|R² -0\.39 cae por debajo del SLO \(0\.63\) en el paso 12|2026-07-20T00:53:51\.629056+00:00|
+|23|6afe4b2e|error\_budget\_exhausted|critical|Error budget agotado en el paso 12|2026-07-20T00:53:51\.629067+00:00|
+|24|1db185e0|data\_drift|warning|Drift detectado \(PSI máx=12\.43\) en el paso 13|2026-07-20T00:53:51\.766918+00:00|
+|25|3ffad8d9|rmse\_degradation|critical|RMSE 3\.12 supera el SLO \(0\.70\) en el paso 13|2026-07-20T00:53:51\.766956+00:00|
+|26|5bc392b6|r2\_degradation|critical|R² -0\.12 cae por debajo del SLO \(0\.63\) en el paso 13|2026-07-20T00:53:51\.766979+00:00|
+|27|92d0653f|error\_budget\_exhausted|critical|Error budget agotado en el paso 13|2026-07-20T00:53:51\.766999+00:00|
+|28|a82702ad|data\_drift|warning|Drift detectado \(PSI máx=12\.43\) en el paso 14|2026-07-20T00:53:51\.903827+00:00|
+|29|9227e2fa|rmse\_degradation|critical|RMSE 2\.75 supera el SLO \(0\.70\) en el paso 14|2026-07-20T00:53:51\.903853+00:00|
+|30|5b4a6036|r2\_degradation|critical|R² -0\.26 cae por debajo del SLO \(0\.63\) en el paso 14|2026-07-20T00:53:51\.903867+00:00|
+|31|fb7a73a1|error\_budget\_exhausted|critical|Error budget agotado en el paso 14|2026-07-20T00:53:51\.903879+00:00|
+|32|25a5bc36|data\_drift|warning|Drift detectado \(PSI máx=11\.31\) en el paso 15|2026-07-20T00:53:52\.025920+00:00|
+|33|6e870aaf|rmse\_degradation|critical|RMSE 2\.96 supera el SLO \(0\.70\) en el paso 15|2026-07-20T00:53:52\.025946+00:00|
+|34|4962baac|r2\_degradation|critical|R² -0\.56 cae por debajo del SLO \(0\.63\) en el paso 15|2026-07-20T00:53:52\.025961+00:00|
+|35|0924f002|error\_budget\_exhausted|critical|Error budget agotado en el paso 15|2026-07-20T00:53:52\.025974+00:00|
