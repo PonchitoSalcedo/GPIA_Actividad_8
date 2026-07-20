@@ -37,7 +37,7 @@ latencia y drift), el sistema:
 └── mlflow.db                           # Base de datos SQLite generada por MLflow
 ```
 
-## Indicadores monitoreados
+## Indicadores Monitoreados
 
 | Categoría | Indicador | Descripción |
 |---|---|---|
